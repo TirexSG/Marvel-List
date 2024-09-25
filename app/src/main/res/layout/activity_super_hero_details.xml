@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marvel_background">
+
+    <ProgressBar
+        android:id="@+id/progressBarDetails"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/marvel_background"
+        android:visibility="gone"
+        tools:context=".SuperHeroDetailsActivity"
+        tools:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSuperHeroImage"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_margin="30dp"
+            android:elevation="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            android:visibility="gone"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivSuperHeroDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSuperHeroDetails"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="-30dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/transparent_black"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent_black"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:id="@+id/tvSuperHeroName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="3"
+                    android:shadowRadius="3"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:text="SuperHero Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/description_text"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tvSuperHeroDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="Description of the hero" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvComicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="40dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                tools:text="Comic Name" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

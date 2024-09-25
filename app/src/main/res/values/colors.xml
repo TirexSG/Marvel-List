@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="cv_name">#74000000</color>
+    <color name="cv_background_list">#E0E0E0</color>
+    <color name="transparent_black">#CC000000</color>
+    <color name="cv_background_details_list">#160000</color>
+    <color name="tv_background_black">#990B0B0B</color>
+    <color name="rv_background">#33FFFFFF</color>
+    <color name="menu_background">#1AFFFFFF</color>
+
+
+
+
+</resources>
