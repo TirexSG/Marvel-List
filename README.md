@@ -37,14 +37,7 @@ Este proyecto utiliza la **API oficial de Marvel** para obtener información sob
 
 ## **Capturas de Pantalla**
 
-- **Pantalla de Inicio**  
-  <img src="images/screenshot1.jpeg" alt="Pantalla de Inicio" width="300"/>
-
-- **Búsqueda de Superhéroes**  
-  <img src="images/screenshot2.jpeg" alt="Búsqueda de Superhéroes" width="300"/>
-
-- **Detalles del Superhéroe**  
-  <img src="images/screenshot3.jpeg" alt="Detalles del Superhéroe" width="300"/>
+  <img src="images/screenshot1.png" alt="Pantalla de Inicio"/>
 
 ## **Contribuciones**
 
